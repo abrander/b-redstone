@@ -1,0 +1,6 @@
+{
+    "parent": "block/redstone_dust_overlay_power",
+    "textures": {
+        "overlay": "block/redstone_dust_overlay_power00"
+    }
+}
