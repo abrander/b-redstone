@@ -1,0 +1,9 @@
+{
+    "parent": "block/comparator",
+    "textures": {
+        "slab": "block/comparator_slab_on_compare",
+        "top": "block/comparator_top_on_compare",
+        "input": "block/redstone_torch",
+        "toggle": "block/redstone_torch_off"
+    }
+}
