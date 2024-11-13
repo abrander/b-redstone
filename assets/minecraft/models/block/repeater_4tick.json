@@ -1,7 +1,6 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "block/repeater",
         "slab": "block/repeater_slab_4tick",
         "top": "block/repeater_top_4tick",
         "output": "block/redstone_torch_off",

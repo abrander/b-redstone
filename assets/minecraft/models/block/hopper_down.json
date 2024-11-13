@@ -1,7 +1,6 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "block/hopper_outside",
         "top": "block/hopper_top",
         "exit": "block/red",
         "side": "block/hopper_down_side",
