@@ -1,0 +1,6 @@
+{
+    "parent": "block/note_block_note_overlay",
+    "textures": {
+        "all": "block/note_block_17"
+    }
+}
