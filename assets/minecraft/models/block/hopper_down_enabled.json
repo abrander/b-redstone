@@ -1,0 +1,9 @@
+{
+    "parent": "block/hopper_down",
+    "textures": {
+        "top": "block/hopper_enabled_top",
+        "exit": "block/yellow",
+        "side": "block/hopper_down_enabled_side",
+        "inside": "block/hopper_down_enabled_inside"
+    }
+}

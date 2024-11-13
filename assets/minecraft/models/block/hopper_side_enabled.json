@@ -1,0 +1,13 @@
+{
+    "parent": "block/hopper_side",
+    "textures": {
+        "top": "block/hopper_enabled_top",
+        "exit": "block/yellow",
+        "side_enter": "block/hopper_side_enabled_enter",
+        "side_exit": "block/hopper_side_enabled_exit",
+        "side_left": "block/hopper_side_enabled_left",
+        "side_right": "block/hopper_side_enabled_right",
+        "bottom": "block/hopper_side_enabled_bottom",
+        "inside": "block/hopper_side_enabled_inside"
+    }
+}
