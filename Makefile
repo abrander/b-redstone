@@ -1,25 +1,24 @@
 ZIP:=b-redstone.zip
 MCMETA:=pack.mcmeta
 ASSETS:=assets
+MINECRAFT_PATH:=~/.minecraft
 
-.PHONY: lint vanilla $(ZIP) install
+.PHONY: $(ZIP) install-zip install-link clean
 
 $(ZIP): $(MCMETA) $(ASSETS)
 	zip -r $@ $^
 
-lint: $(MCMETA)
-	jsonlint-php -q $(MCMETA)
+install-zip: $(ZIP)
+	cp $(ZIP) $(MINECRAFT_PATH)/resourcepacks
 
-install: $(ZIP)
-	cp $(ZIP) ~/.minecraft/resourcepacks
+install-link:
+	rm -f $(MINECRAFT_PATH)/resourcepacks/b-redstone-dev
+	ln -s $(shell pwd) $(MINECRAFT_PATH)/resourcepacks/b-redstone-dev
 
 vanilla:
 	mkdir -p vanilla
-	unzip ~/.minecraft/versions/1.16.5/1.16.5.jar -d vanilla
+	unzip $(MINECRAFT_PATH)/versions/1.16.5/1.16.5.jar -d vanilla
 
 clean:
-	rm -rf $(ZIP)
-
-link:
-	rm -f ~/.minecraft/resourcepacks/b-redstone-dev
-	ln -s $(shell pwd) ~/.minecraft/resourcepacks/b-redstone-dev
+	rm -f $(ZIP)
+	rm -rf vanilla
