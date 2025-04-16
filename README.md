@@ -2,6 +2,8 @@
 
 This is a texture pack for redstoners using Minecraft version 1.15 - 1.21.5. It specifically focuses on improving the redstone components in the game, making them more visually distinct and easier to understand at a glance. It doesn't change any game mechanics or add any new features, but rather enhances the existing ones by providing clearer and more informative textures.
 
+![Screenshot of b-redstone](screenshot.png)
+
 It features new textures for the following blocks:
 
 - **Redstone dust** - it will show the redstone level
