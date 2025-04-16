@@ -40,15 +40,12 @@ b-redstone_%.zip: $(MCMETA)_% $(ASSETS)
 	zip -r $@ $(MCMETA)_$(*) $(ASSETS)
 	printf "@ $(MCMETA)_$(*)\n@=$(MCMETA)\n" | zipnote -w $@
 
-$(ZIP): $(MCMETA) $(ASSETS)
-	zip -r $@ $^
-
-install-zip: $(ZIP)
-	cp $(ZIP) $(MINECRAFT_PATH)/resourcepacks
+install-zip: b-redstone_1.16.2-1.16.5.zip
+	cp b-redstone_1.16.2-1.16.5.zip $(MINECRAFT_PATH)/resourcepacks
 
 install-link:
-	rm -f $(MINECRAFT_PATH)/resourcepacks/b-redstone-dev
-	ln -s $(shell pwd) $(MINECRAFT_PATH)/resourcepacks/b-redstone-dev
+	rm -f $(MINECRAFT_PATH)/resourcepacks/b-redstone
+	ln -s $(shell pwd) $(MINECRAFT_PATH)/resourcepacks/b-redstone
 
 vanilla:
 	mkdir -p vanilla
