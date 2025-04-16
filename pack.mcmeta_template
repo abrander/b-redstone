@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": ${PACK_FORMAT},
-    "description": "b-redstone"
+    "description": "Texture pack for redstoners"
   }
 }
