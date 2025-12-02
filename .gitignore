@@ -2,3 +2,6 @@
 /b-redstone*.zip
 /pack.mcmeta_1*
 
+# This is stupid, but the format changed from 1.21.9 and unwards, so
+# we probably never need to template this again.
+!/pack.mcmeta_1.21.9-*

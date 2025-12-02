@@ -21,12 +21,14 @@ VERSIONS_PACK_FORMATS = \
   1.21-1.21.1=34 \
   1.21.2-1.21.3=42 \
   1.21.4=46 \
-  1.21.5=55
+  1.21.5=55 \
+  1.21.6=63 \
+  1.21.7-1.21.8=64
 
 VERSIONS = $(foreach pair,$(VERSIONS_PACK_FORMATS),$(word 1,$(subst =, ,$(pair))))
 
 ZIP_TARGETS = $(addprefix b-redstone_,$(addsuffix .zip,$(VERSIONS)))
-zip: $(ZIP_TARGETS)
+zip: $(ZIP_TARGETS) b-redstone_1.21.9-1.21.10.zip
 
 # Create the pack.mcmeta file for each version
 # using the template and the corresponding pack format.

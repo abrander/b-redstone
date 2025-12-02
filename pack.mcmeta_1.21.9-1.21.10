@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 69.0,
+    "description": "Texture pack for redstoners",
+    "supported_formats": [9, 64],
+    "min_format": 9.0,
+    "max_format": 69.0
+  }
+}
