@@ -1,6 +1,6 @@
 ZIP:=b-redstone.zip
 MCMETA:=pack.mcmeta
-ASSETS:=assets
+ASSETS:=assets pack.png
 MINECRAFT_PATH:=~/.minecraft
 
 .PHONY: $(ZIP) install-zip install-link clean
